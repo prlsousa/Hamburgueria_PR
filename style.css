@@ -43,14 +43,15 @@ body {
   }
   
   footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #8b4513;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #8b4513;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1; /* Elevar o rodapé para ficar acima do conteúdo */
+}
   
   button {
     background-color: #ffe4b5;
@@ -77,13 +78,18 @@ body {
   /* Estilos específicos para telas menores que 600 pixels */
   main {
     flex-direction: column; /* Empilhar as seções verticalmente */
-    align-items: center; /* Centralizar as seções */
+    align-items: stretch; /* Esticar as seções verticalmente */
   }
 
   section {
     flex: 1;
-    width: 100%; /* Ocupa a largura total em telas pequenas */
-    margin: 10px 0; /* Adicione algum espaçamento entre as seções */
+    width: calc(100% - 20px); /* Ocupa a largura total com margens */
+    margin: 10px;
+    padding: 10px;
+  }
+
+  footer {
+    position: relative; /* Retorna ao fluxo normal do documento */
   }
 }
   
