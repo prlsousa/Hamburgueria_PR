@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Faça seu Gourmet!</title>
+</head>
+<body>
+  <header>
+    <h1>Faça seu Gourmet!</h1>
+  </header>
+  <main>
+    <section id="breads">
+      <h2>Escolha o pão:</h2>
+      <label><input type="radio" name="bread" value="brioche"> Brioche - R$ 3,00</label>
+      <label><input type="radio" name="bread" value="cebola"> Pão de cebola - R$ 3,50</label>
+      <label><input type="radio" name="bread" value="gergelim"> Pão de gergelim - R$ 3,00</label>
+      <label><input type="radio" name="bread" value="australiano"> Pão australiano - R$ 4,00</label>
+    </section>
+
+    <section id="meats">
+      <h2>Escolha a carne:</h2>
+      <label><input type="number" name="patinho" min="0" value="0"> Blend de patinho - R$ 6,00</label>
+      <label><input type="number" name="costela" min="0" value="0"> Blend de costela - R$ 5,00</label>
+      <label><input type="number" name="picanha" min="0" value="0"> Blend de picanha - R$ 7,00</label>
+      <label><input type="number" name="linguiça" min="0" value="0"> Blend de linguiça - R$ 5,50</label>
+      <label><input type="number" name="pernil_suíno" min="0" value="0"> Blend de pernil suíno - R$ 6,00</label>
+    </section>
+
+    <section id="toppings">
+        <h2>Adicione complementos:</h2>
+        <label><input type="number" name="queijo_prato" min="0" value="0"> Queijo prato - R$ 1,00</label>
+        <label><input type="number" name="queijo_cheddar" min="0" value="0"> Queijo Cheddar - R$ 1,00</label>
+        <label><input type="number" name="requeijao" min="0" value="0"> Requeijão - R$ 1,00</label>
+        <label><input type="number" name="mussarela" min="0" value="0"> Mussarela - R$ 1,00</label>
+        <label><input type="number" name="bacon" min="0" value="0"> Bacon - R$ 3,00</label>
+        <label><input type="number" name="cebola_caramel" min="0" value="0"> Cebola Caramelizada - R$ 2,00</label>
+        <label><input type="number" name="cebola_rx" min="0" value="0"> Cebola Roxa - R$ 0,50</label>
+        <label><input type="number" name="alface" min="0" value="0"> Alface - R$ 0,50</label>
+        <label><input type="number" name="tomate" min="0" value="0"> Tomate - R$ 0,50</label>
+        <label><input type="number" name="banana_frita" min="0" value="0"> Banana Frita - R$ 1,00</label>
+        <label><input type="number" name="ovo" min="0" value="0"> Ovo frito - R$ 1,50</label>
+        <label><input type="number" name="batata" min="0" value="0"> Batata Palha - R$ 0,50</label>
+        <label><input type="number" name="cebola_crispy" min="0" value="0"> Cebola Crispy - R$ 1,50</label>
+        <label><input type="number" name="picles" min="0" value="0"> Picles - R$ 3,00</label>
+    </section>
+
+    <section id="sauces">
+        <h2>Escolha os molhos:</h2>
+        <label><input type="checkbox" name="mostarda"> Molho de Mostarda - R$ 4,00</label>
+        <label><input type="checkbox" name="barbecue"> Molho Barbecue - R$ 3,00</label>
+        <label><input type="checkbox" name="catchup"> Catchup - R$ 2,00</label>
+        <label><input type="checkbox" name="maionese_alho"> Maionese Caseira com alho - R$ 3,50</label>
+        <label><input type="checkbox" name="maionese_bacon"> Maionese Caseira com bacon - R$ 5,00</label>
+    </section>
+  </main>
+
+  <footer>
+    <div id="order-summary">
+      <p>Total do pedido: R$ <span id="total">0.00</span></p>
+      <button onclick="finalizeOrder()">Finalizar</button>
+    </div>
+    <h3>by Paulo Roberto Lopes Sousa</h3>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
